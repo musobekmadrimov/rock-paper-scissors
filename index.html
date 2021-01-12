@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
+        <!-- integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock–paper–scissors game</title>
+
+    <!-- DEVELOPED BY MUSOBEK MADRIMOV -->
+    <!-- Tel: (99) 966-1999 -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="firstRow">
+            <h1>Rock–paper–scissors game</h1>
+        </div>
+        <div class="secondRow">
+            <hr>
+            <h3>Computer has <span id="computerBall">0</span> balls!</h3>
+            <hr>
+        </div>
+        <div class="thirdRow">
+            <div class="leftSideOfThirdRow">
+                <p>developed by <br> Musobek Madrimov</p>
+            </div>
+            <div class="centerOfThirdRow">
+                <div class="topSideOfCenter">
+                    <img src="img/paper.png" alt="" id="computerChoose">
+                </div>
+                <div class="bottomSideOfCenter">
+                    <button class="myButton" onclick="play()">PLAY</button>
+                    <img src="img/paper.png" alt="" id="userChoose">
+                </div>
+            </div>
+            <div class="rightSideOfThirdRow">
+                <span id="result">Let's Play Together!</span>
+            </div>
+        </div>
+        <div class="fourthRow">
+            <div class="contentOfFourthRow">
+                <div class="textYourChoose">
+                    <h4>Your Choose:</h4>
+                </div>
+                <img src="img/paper.png" alt="Paper" class="row5Image" onclick="paper()">
+                <img src="img/rock.png" alt="Paper" class="row5Image" onclick="rock()">
+                <img src="img/scissors.png" alt="Paper" class="row5Image" onclick="scissors()">
+            </div>
+        </div>
+        <div class="fivethRow">
+            <hr>
+            <h3>You have <span id="userBall">0</span> balls!</h3>
+            <hr>
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>
+</body>
+
+</html>
